@@ -19,13 +19,7 @@
                             </el-icon>
                             <span>{{ item.title }}</span>
                         </template>
-                        <template v-for="subItem in item.subs">
-                            <el-sub-menu
-                                v-if="subItem.subs"
-                                :index="subItem.index"
-                                :key="subItem.index"
-                                v-permiss="item.permiss"
-                            >
+
                                 <template #title>{{ subItem.title }}</template>
                                 <el-menu-item v-for="(threeItem, i) in subItem.subs" :key="i" :index="threeItem.index">
                                     {{ threeItem.title }}
