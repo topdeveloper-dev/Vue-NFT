@@ -5,13 +5,7 @@
                 <el-form-item label="表单名称" prop="name">
                     <el-input v-model="form.name"></el-input>
                 </el-form-item>
-                <el-form-item label="选择器" prop="region">
-                    <el-select v-model="form.region" placeholder="请选择">
-                        <el-option key="小明" label="小明" value="小明"></el-option>
-                        <el-option key="小红" label="小红" value="小红"></el-option>
-                        <el-option key="小白" label="小白" value="小白"></el-option>
-                    </el-select>
-                </el-form-item>
+
                 <el-form-item label="日期时间">
                     <el-col :span="11">
                         <el-form-item prop="date1">
